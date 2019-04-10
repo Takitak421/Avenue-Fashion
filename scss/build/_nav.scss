@@ -1,0 +1,58 @@
+.site-nav {
+	padding: 0.5rem 1rem;
+}
+
+.nav-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+
+}
+
+.menu-icon {
+	width: 1.5rem;
+}
+
+.list-view {
+	display: none;
+}
+
+.avenue-fashion {
+	font-size: 1.25rem;
+	font-weight: bolder;
+	color: #333;
+	text-transform: uppercase;
+
+	span {
+		font-weight: 300;
+	}
+}
+
+.mobile-sub-menu {
+	position: fixed;
+	background: lightblue;
+	padding: 1rem;
+	width: 45%;
+	top: -120vh;
+	border-bottom: 2px solid grey;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+@media(min-width: 690px) {
+
+	.menu-icon,
+	.mobile-sub-menu {
+		display: none;
+	}
+
+
+	.list-view {
+		display: flex;
+
+		li {
+			margin: 0 1rem;
+		}
+	}
+}

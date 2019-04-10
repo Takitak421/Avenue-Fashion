@@ -1,0 +1,126 @@
+.footer {
+  display: grid;
+  padding: 2rem;
+  background: #f8f8f8;
+
+  h3 {
+    font-weight: 700;
+  }
+
+  span {
+    font-weight: 300;
+  }
+
+  h3,
+  span {
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  // info footer
+  .information-footer {
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+
+    li {
+      font-weight: 300;
+      font-size: 14pt;
+    }
+
+    .info {
+      grid-area: inform;
+    }
+
+    .buy {
+      grid-area: buy;
+    }
+
+    .lookbook {
+      grid-area: lookb;
+    }
+
+    .contact {
+      grid-area: contact-det;
+    }
+  }
+
+  // both
+
+  .fashion-social {
+    display: grid;
+    grid-column-gap: 2rem;
+    margin: 2rem auto;
+
+    div {
+      padding: 3rem 2rem;
+    }
+  }
+
+  // awards
+  .fashion-awards {
+    grid-area: fash;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background: #333;
+  }
+
+  // social media
+  .social-media-box {
+    grid-area: soc-med;
+    background: #00c8c8;
+
+    img {
+      width: 1.65rem;
+    }
+
+    .social-medias {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      align-items: baseline;
+      margin: 0 auto;
+    }
+  }
+
+  .copyright {
+    background: #333;
+  }
+}
+
+@media (max-width: 1099px) {
+  .information-footer {
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    grid-template-areas:
+      "inform buy"
+      "lookb contact-det";
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .fashion-social {
+    grid-row-gap: 2rem;
+    grid-template-areas:
+      "fash fash"
+      "soc-med soc-med";
+    grid-template-columns: repeat(2, calc(400px / 2));
+    grid-template-rows: repeat(2, 160px);
+  }
+}
+
+@media (min-width: 1100px) {
+  .information-footer {
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    grid-template-areas: "inform buy lookb contact-det";
+    grid-template-columns: repeat(4, 25%);
+    padding: 2rem;
+  }
+
+  .fashion-social {
+    grid-template-areas: "fash soc-med";
+    grid-template-columns: repeat(2, calc(400px));
+  }
+}

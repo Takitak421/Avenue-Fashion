@@ -1,0 +1,23 @@
+.site-header {
+    padding: 8rem 0;
+    text-align: center;
+    background: linear-gradient(rgba(128, 128, 128, 0.37), rgb(58, 58, 58)), no-repeat center / cover url(../img/photosm.jpg);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.title {
+    font-size: calc(2rem + 2vw);
+    // line-height: calc(1.2rem + 1vw);
+}
+
+.tagline {
+    font-size: calc(0.75rem + 2vw);
+}
+
+@media (min-width: 800px) {
+    .site-header {
+        background: linear-gradient(rgba(128, 128, 128, 0.37), rgb(58, 58, 58)), no-repeat center / cover url(../img/photolg.jpg);
+    }
+}

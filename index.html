@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" style="display: grid;">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Register at Avenue Fashion">
+    <title>Client Sign Up Form</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+
+  <body>
+    <!-- for mobile only -->
+    <aside id="mobile-sub-menu" class="mobile-sub-menu" style="top: -120vh;">
+      <ul class="mobile-menu-links">
+        <li><a href="#">Men's</a></li>
+        <li><a href="#">Women's</a></li>
+        <li><a href="#">The Brand</a></li>
+        <li><a href="#">Local Stores</a></li>
+        <li><a href="#">Look Book</a></li>
+      </ul>
+    </aside>
+
+    <nav class="site-nav" role="navigation">
+      <ul class="nav-content">
+        <li class="avenue-fashion">
+          <h1>Avenue <span>Fashion</span></h1>
+        </li>
+        <li>
+          <img class="menu-icon" id="mobile-menu-button" src="img/icons/menu.svg" alt="menu">
+          <ul class="list-view">
+            <li><a href="#">Men's</a></li>
+            <li><a href="#">Women's</a></li>
+            <li><a href="#">The Brand</a></li>
+            <li><a href="#">Local Stores</a></li>
+            <li><a href="#">Look Book</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <header class="site-header" role="banner">
+      <h1 class="title">Avenue Sign up</h1>
+      <p class="tagline">rewards program</p>
+    </header>
+    <main role="main">
+      <aside>
+        <!-- client information signup -->
+
+        <form id="client-signup" class="client-signup" role="form">
+          <div class="register-header">
+            <h1>Register</h1>
+          </div>
+          <div class="first-name">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" name="firstName">
+          </div>
+          <div class="last-name">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" name="lastName">
+          </div>
+          <div class="email">
+            <label for="email">Email Address</label>
+            <input id="email" type="text" name="emailaddress">
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password">
+          </div>
+          <div class="password-confirm">
+            <label for="password-confirm">Confirm Password</label>
+            <input id="password-confirm" type="password" name="confirmpassword">
+          </div>
+          <div class="email-frequency" tabindex="6">
+            <!-- <style>
+              select {
+                appearance: none;
+                -webkit-apperance: none;
+                background: no-repeat right / cover url(../img/icons/down.svg);
+              }
+            </style> -->
+            <label for="email-frequency">Email Frequency</label>
+            <select name="frequent" id="email-frequency">
+              <option value="1">daily</option>
+              <option value="2">weekly</option>
+              <option value="3">monthly</option>
+              <option value="4">quarterly</option>
+            </select>
+          </div>
+          <div class="phone-number">
+            <label for="phone-number">Phone Number</label>
+            <input id="phone-number" type="text" name="phone">
+          </div>
+          <!-- legal -->
+          <div class="fine-print">
+            <input type="radio" tabindex="8">I agree to the terms and conditions of the website. I may opt out at any
+            time.
+          </div>
+
+          <div class="message">
+            <label for="message">Send us a message (optional)</label>
+            <textarea name="your-message" id="message"></textarea>
+          </div>
+
+          <div class="signup-form row d-flex flex-wrap justify-content-between" style="min-width: 690px">
+            <h2 class="col-12 row">Sign-up for</h2>
+            <div class="updates row col-4 signup-option">
+              <input id="updates" type="checkbox" checked><label for="updates">exclusive updates</label>
+            </div>
+            <div class="discount row col-4 signup-option">
+              <input id="discount" type="checkbox"><label for="discount">discounts/sales</label>
+            </div>
+            <div class="arrivals row col-4 signup-option">
+              <input id="arrivals" type="checkbox"><label for="arrivals">new arrivals</label>
+            </div>
+            <div class="contents row col-4 signup-option">
+              <input id="contents" type="checkbox"><label for="contents">contents</label>
+            </div>
+            <div class="everything row col-4 signup-option">
+              <input id="everything" type="checkbox"><label for="everything">everything</label>
+            </div>
+            <div class="coupons row col-4 signup-option">
+              <input id="coupons" type="checkbox"><label for="coupons">coupons</label>
+            </div>
+
+          </div>
+          <div class="your-preferences d-flex flex-wrap row">
+            <h2 class="col-12">Preferences (optional)</h2>
+
+            <div class="your-language col-6">
+              <label for="your-language">Language</label>
+              <select name="pref-lang" id="your-language">
+                <option value="0">Arabic</option>
+                <option value="1">English</option>
+                <option value="2">Filipino</option>
+                <option value="3">Spanish (Latin)</option>
+                <option value="4">Turkish</option>
+              </select>
+            </div>
+            <div class="cloth-size col-6">
+              <label for="cloth-size">What do you prefer a size of clothing?</label>
+              <select name="your-size" id="cloth-size">
+                <option value="0">Extra Small</option>
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+                <option value="4">Extra Large</option>
+                <option value="5">Extra-extra Large</option>
+              </select>
+            </div>
+            <div class="store-location col-6">
+              <label for="store-location">Your Store Location</label>
+              <select name="store-loc" id="store-location">
+                <option value="0">Calgary, AB</option>
+                <option value="1">Edmonton, AB</option>
+                <option value="2">Prince George, BC</option>
+                <option value="3">Regina, SK</option>
+                <option value="4">Saskatoon, SK</option>
+                <option value="5">Vancouver, BC</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="create-account">
+            <button type="submit" class="button-plain">Create account</button>
+          </div>
+          <div class="agreement">
+            <p>By clicking 'Create Account', you agree to our <a href="#">Privacy Policy --></a></p>
+          </div>
+          <div class="help-support">
+            <h3>Need help?</h3>
+            <p>If you have questions about your account, please contact <a href="#">customer service</a> 24 hours a day,
+              7 days a week. <span> <a href="#">1-888-555-5555</a> </span></p>
+          </div>
+        </form>
+      </aside>
+    </main>
+    <footer class="footer">
+
+
+      <ul class="information-footer">
+        <li class="info">
+          <h3>Information</h3>
+          <ul>
+            <li>The brand</li>
+            <li>Local stores</li>
+            <li>Customer service</li>
+            <li>Privacy & cookies</li>
+            <li>Site map</li>
+          </ul>
+        </li>
+        <li class="buy">
+          <h3>Why buy from us</h3>
+          <ul>
+            <li>Shipping & returns</li>
+            <li>Secure shopping</li>
+            <li>Testimonials</li>
+            <li>Award winning</li>
+            <li>Ethical trading</li>
+          </ul>
+        </li>
+        <li class="lookbook">
+          <h3>Lookbook</h3>
+          <ul>
+            <li>Latest posts</li>
+            <li>Men's lookbook</li>
+            <li>Women's lookbook</li>
+            <li>Lookbooks RSS feed</li>
+            <li>View your lookbook</li>
+            <li>Delete your lookbook</li>
+          </ul>
+        </li>
+        <li class="contact">
+          <h3>Contact Details</h3>
+          <ul>
+            <li>
+              <p>Head office:
+                Avenue Fashion, 180-182 Regent Street, London</p>
+            </li>
+
+            <li>Telephone: 0123-456-789</li>
+            <li>Email: support@yourwebsite.com</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="fashion-social">
+        <div class="fashion-awards">
+          <h3>Award Winner</h3>
+          <span>Fashion Awards 2016</span>
+        </div>
+        <div class="social-media-box">
+          <ul class="social-medias">
+            <li class="news-feed">
+              <img src="img/icons/facebook-f-brands.svg" alt="Facebook">
+            </li>
+            <li class="tweet">
+              <img src="img/icons/twitter-brands.svg" alt="Twitter">
+            </li>
+            <li class="pictogram">
+              <img src="img/icons/instagram-brands.svg" alt="Instagram">
+            </li>
+            <li class="pins">
+              <img src="img/icons/pinterest-brands.svg" alt="Pinterest">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p style="background: #333333; color: #f3f3f3;">© 2019 Avenue Fashion™</p>
+    </footer>
+    <script src="js/menu/menu.js"></script>
+  </body>
+
+</html>

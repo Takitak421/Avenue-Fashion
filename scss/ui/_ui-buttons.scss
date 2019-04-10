@@ -1,0 +1,16 @@
+.button-plain {
+    text-align: center;
+    line-height: 2rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: white;
+    border: solid 2px #737373;
+    width: 250px;
+}
+
+@media (min-width: 800px) {
+    .button-plain {
+        width: 380px;
+    }
+}

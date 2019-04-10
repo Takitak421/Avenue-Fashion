@@ -1,0 +1,162 @@
+.client-signup {
+	display: grid;
+	grid-row-gap: 2rem;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 1rem;
+	color: #444;
+
+	label {
+		display: block;
+		color: #999;
+		font-weight: 300;
+		font-size: calc(13px / 1rem);
+	}
+
+	h2 {
+		font-size: 1.4rem;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 0.5rem;
+		color: #444;
+		font-size: 1.125rem;
+		line-height: 1.125rem;
+		background: #fff;
+		border: 1px solid #999;
+	}
+
+	select {
+		width: 100%;
+		padding: 0.5rem;
+		color: #444;
+		font-size: 1.125rem;
+		line-height: 1.125rem;
+		border: 1px solid #999;
+		appearance: none;
+	}
+
+	input[type="radio"] {
+		width: inherit;
+	}
+
+	textarea {
+		min-width: 100%;
+		max-width: 100%;
+		min-height: 298px;
+		max-height: 298px;
+	}
+
+	div {
+		padding: 1rem;
+		background: #fff;
+	}
+}
+
+.signup-form {
+	margin: 0.95rem;
+}
+
+.create-account {
+	button {
+		font-size: 1.15rem;
+		letter-spacing: 3px;
+		word-spacing: 1px;
+	}
+}
+
+.help-support h3,
+.register-header {
+	text-transform: uppercase;
+}
+
+@media (min-width: 1100px) {
+	.client-signup {
+		grid-column-gap: 1.5rem;
+		grid-template-areas:
+			"reg-head reg-head"
+			"first-name last-name"
+			"email email"
+			"password password-confirm"
+			"email-frequency phone-number"
+			"details details"
+			"message message"
+			"sign-form sign-form"
+			"prefer prefer"
+			"cre-acc agree"
+			"grid-sup grid-sup";
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.register-header {
+		grid-area: reg-head;
+	}
+
+	.email {
+		grid-area: email;
+	}
+
+	.fine-print {
+		grid-area: details;
+	}
+
+	.message {
+		grid-area: message;
+	}
+
+	.your-preferences {
+		grid-area: prefer;
+	}
+
+	.create-account {
+		grid-area: cre-acc;
+	}
+
+	.agreement {
+		grid-area: agree;
+
+		p {
+			width: 270px;
+		}
+	}
+
+	.signup-form {
+		grid-area: sign-form;
+		min-width: 690px;
+		max-width: 1150px;
+	}
+
+	.help-support {
+		grid-area: grid-sup;
+		width: 700px;
+	}
+}
+
+.client-signup div:nth-child(10) {
+	h2 {
+		font-size: 1.85rem;
+	}
+}
+
+// checkbox form
+.signup-option {
+	input[type="checkbox"] {
+		width: 2rem;
+		height: 2rem;
+		margin-right: 0.7rem;
+		vertical-align: middle;
+	}
+
+	label {
+		display: inline;
+		font-size: 1.07rem;
+	}
+
+	.agreement p {
+		align-self: center;
+		width: 320px;
+		margin-left: 100px;
+	}
+}
